@@ -1,0 +1,6 @@
+---
+Name: magiclinkloginroutes
+---
+SilverStripe\Control\Director:
+  rules:
+    'magic-link//$Action/$ID': 'XD\MagicLinkLogin\Control\MagicLinkController'

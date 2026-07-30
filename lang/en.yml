@@ -1,0 +1,12 @@
+en:
+  XD\MagicLinkLogin\Control\MagicLinkController:
+    LINK_INVALID: 'This link is invalid or has expired. Please request a new one.'
+    CSRF_FAILURE: 'Your session timed out. Please use the link from your email again.'
+    CODE_INVALID: 'That code is incorrect or has expired.'
+    CODE_EMAIL_SUBJECT: 'Your verification code'
+    VERIFY_TITLE: 'Enter your verification code'
+    VERIFY_SENT_TO: 'We sent a code to {email}'
+    VERIFY_SUBMIT: 'Continue'
+  XD\MagicLinkLogin\Email\VerificationCode:
+    INTRO: 'Here is your verification code:'
+    EXPIRY_NOTE: 'This code will expire shortly. If you did not request this, you can ignore this email.'

@@ -1,0 +1,20 @@
+---
+Name: magiclinklogin
+---
+XD\MagicLinkLogin\Service\MagicLinkService:
+  # How long (seconds) a generated magic link remains valid from the moment it is created.
+  link_period: 259200 # 72 hours
+
+XD\MagicLinkLogin\Control\MagicLinkController:
+  # Whether a valid link click still requires an emailed verification code before completing login.
+  # Default on: possession of the link alone is treated as the first factor, the code is the second.
+  require_email_confirmation: true
+
+  # How long (seconds) an emailed verification code remains valid from the moment it is sent.
+  code_period: 600 # 10 minutes
+
+  # Number of digits in the emailed verification code.
+  code_length: 6
+
+  # Number of incorrect code attempts allowed before the code is invalidated and a new one must be requested.
+  max_code_attempts: 5
